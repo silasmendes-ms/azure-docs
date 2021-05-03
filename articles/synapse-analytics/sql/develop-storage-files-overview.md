@@ -65,7 +65,7 @@ OPENROWSET enables user to query the files placed on some external data source:
 ```sql
 SELECT * FROM
  OPENROWSET(BULK 'file/path/*.parquet',
- DATASOURCE = MyAzureInvoices,
+ DATA_SOURCE = MyAzureInvoices,
  FORMAT= 'parquet') as rows
 ```
 
